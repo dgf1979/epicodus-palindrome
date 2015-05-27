@@ -14,13 +14,9 @@ var foo = function(bar) {
 };
 
 var isPalindrome = function(word) {
-  if (word.length % 2 === 0) {
-    var half = word.length / 2;
-    var frontHalf = word.substring(0, half);
-    var backHalf = word.substring(half);
-    var backHalfReversed = backHalf.split("").reverse().join("");
-    return (frontHalf === backHalfReversed);
-  }
-
-  return null;
+  var half = Math.floor(word.length / 2);
+  var frontHalf = word.substring(0, half);
+  var backHalf = word.substring(word.length - half, word.length);
+  var backHalfReversed = backHalf.split("").reverse().join("");
+  return (frontHalf === backHalfReversed);
 }
