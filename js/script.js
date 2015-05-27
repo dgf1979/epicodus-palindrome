@@ -14,6 +14,7 @@ var foo = function(bar) {
 };
 
 var isPalindrome = function(word) {
+  word = word.toString().toLowerCase();
   var half = Math.floor(word.length / 2);
   var frontHalf = word.substring(0, half);
   var backHalf = word.substring(word.length - half, word.length);
