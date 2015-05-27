@@ -6,6 +6,20 @@ $( document ).ready(function() {
     console.log( "jQuery Ready" );
 
     $("#jqtest").text('jQuery Ready')
+
+    $("#palindrome-form").submit(function(event) {
+      console.log('submit');
+      var inputText = $("#input-text").val();
+      var resultDiv = $("#results");
+      if(isPalindrome(inputText)) {
+        resultDiv.text(inputText + " is a palindrome! Congrats!!");
+      } else {
+        resultDiv.text(inputText + " is NOT palindrome! Boo.");
+      }
+
+      event.preventDefault();
+    });
+
 });
 
 //raw js
