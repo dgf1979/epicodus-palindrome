@@ -1,23 +1,16 @@
-## [APPNAME] ##
+## Palindromes ##
 
 This application is meant to fulfill the requirements of an assignment through Epicodus code school. For more information on Epicodus, see <http://www.epicodus.com/>.
 
 ### Description ###
 
-[simple app description]
-
-**Assignment:** [assignment title]
+Demostrate javascript by writing a function to determine if a word is a palindrome
 
 **<https://www.learnhowtoprogram.com/table-of-contents>**
 
 ### Author(s) ###
 
-Andrew Finstrom
-
-### Setup ###
-```
-    setup code or details here
-```
+Andrew Finstrom & Jessica Engel
 
 ### License ###
 This is free and unencumbered software released into the public domain.
